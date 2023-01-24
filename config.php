@@ -6,7 +6,6 @@ date_default_timezone_set ("Europe/Moscow");
     $db->set_charset('utf8');
     if ($db->connect_errno) die('Could not connect: '.$mysqli->connect_error);
 
-
     // make a query to the database
     function db_query ($query) {
       global $db;

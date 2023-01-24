@@ -2,6 +2,7 @@
 
 // выводим все данные из бд
 function allOrder() {
+  $result=[];
   $res = db_query("SELECT * FROM `test_for_medo`");
   while ($row = $res->fetch_assoc()) $result[] = $row;
   return $result;
